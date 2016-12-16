@@ -1,0 +1,232 @@
+@import 'config';
+.wrap {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    transition: all 0.5s ease-in 0s;
+    div {
+        float: left;
+        text-align: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.button {
+    width: 34px;
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 44px;
+}
+
+.pre-view {
+    left: 120px
+}
+
+.next-view {
+    right: 120px;
+}
+
+.pre, .next {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 30px;
+    margin-top: 13px;
+}
+
+.pre:hover, .next:hover {
+    color: @mainColor;
+}
+
+.banner-warp {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner1, #banner2, #banner3 {
+    height: 450px;
+    width: 100%;
+    cursor: pointer;
+    // background-color: rgba(0,0,0,0.3);
+    // -webkit-filter: blur(3px);
+    // -moz-filter: blur(3px);
+    // -ms-filter: blur(3px);
+    // -o-filter: blur(3px);
+    // filter: blur(3px);
+}
+
+#banner1 {
+    background: url(/static/images/banner1.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#banner2 {
+    background: url(/static/images/banner2.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#banner3 {
+    background: url(http://dgres.oss-cn-shenzhen.aliyuncs.com/web/banner3%401.5x.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.slider-number-view {
+    width: 300px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.slider-number-cell {
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    i {
+        width: 8px;
+        height: 8px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        border: 1px solid #9f9f9f;
+        display: block;
+        position: absolute;
+        margin: AUTO;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.slider-active {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.banner-view {
+    background: url(/static/images/bg-1.jpg) 0 0 no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.banner-warp-view {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.66);
+}
+
+.banner-title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 130px 0 0 0;
+    span {
+        color: @mainColor;
+    }
+}
+
+.banner-item {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 19px 0 0 0;
+}
+
+.banner-btn {
+    width: 120px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+    span {
+        text-align: center;
+        color: #ffffff;
+        width: 100%;
+        display: block;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    i {
+        color: @mainColor;
+        font-size: 22px;
+    }
+}
+
+.hexagon {
+    width: 100px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid #fa9e04;
+    border-right: 1px solid #fa9e04;
+    position: relative;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid red;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid red;
+}
+
+.home-main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-table-view {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-table-cell {
+    width: 200px;
+    display: table-cell;
+}

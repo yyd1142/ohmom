@@ -4,7 +4,7 @@ var timer = null;
 export default {
   data() {
     return {
-      sliderItem: [{ active: 'slider-active' }, { active: '' }, { active: '' }],
+      sliderItem: [{ active: 'slider-active' }, { active: '' }],
       timerValue: {
         carousel: '',
         len: ''
@@ -12,20 +12,20 @@ export default {
     }
   },
   mounted() {
-    // let self = this;
+    let self = this;
     // this.initBannerSlider();
-    // this.$nextTick(function () {
-    //   $(".banner-warp").mouseover(function () {
-    //     clearInterval(timer);
-    //   });
-    //   $(".banner-warp").mouseout(function () {
-    //     self.next(self.timerValue.carousel, self.timerValue.len);
-    //     let loopTimer = function () {
-    //       self.next(self.timerValue.carousel, self.timerValue.len);
-    //     };
-    //     timer = setInterval(loopTimer, 4000);
-    //   });
-    // });
+    this.$nextTick(function () {
+      // $(".banner-warp").mouseover(function () {
+      //   clearInterval(timer);
+      // });
+      // $(".banner-warp").mouseout(function () {
+      //   self.next(self.timerValue.carousel, self.timerValue.len);
+      //   let loopTimer = function () {
+      //     self.next(self.timerValue.carousel, self.timerValue.len);
+      //   };
+      //   timer = setInterval(loopTimer, 4000);
+      // });
+    });
   },
   methods: {
     initBannerSlider() {
@@ -49,8 +49,8 @@ export default {
       var loopTimer = function () {
         self.next(carousel, len);
       };
-      self.next(carousel, len);
-      timer = setInterval(loopTimer, 4000);
+      // self.next(carousel, len);
+      // timer = setInterval(loopTimer, 4000);
     },
     next(carousel, len) {
       var self = this;
